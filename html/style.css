@@ -1,6 +1,6 @@
 #outercircle {
   /* display: flex; */
-  margin: 10% auto;
+  margin: 8% auto;
   border: 8px solid black;
   width: 500px;
   height: 500px;
@@ -104,19 +104,25 @@
   vertical-align: middle;
 }
 
-.power-on {
-  position: absolute;
+#on {
+  position: relative;
   /* border: 1px solid black; */
-  width: 10px;
-  height: 10px;
-  top: -0.5em;
+  width: 12px;
+  height: 12px;
   padding: 1em;
-  /* margin-top: 10%; */
+  background-color: #2596be;
 }
 
 button.start {
   position: relative;
   margin: 0.3rem 1em;
+  background-color: #addbab;
+  border-radius: 2px;
+}
+
+#strict {
+  position: relative;
+  padding: 1em;
 }
 
 h1 {
@@ -126,4 +132,21 @@ h1 {
 body {
   /* background-image: url(); */
   background-color: #e8eba7;
+}
+
+.turn,
+.text {
+  position: relative;
+  text-align: center;
+  top: -4em;
+  border: 1px solid red;
+}
+
+.turn {
+  position: relative;
+  border: 1px solid black;
+  width: 3em;
+  height: 2em;
+  background-color: #330000;
+  margin: 0.2em auto;
 }
