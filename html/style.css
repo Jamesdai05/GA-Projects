@@ -90,6 +90,35 @@
   font-weight: 900;
   font-family: system-ui;
 }
+
+#switches {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  padding: 10px auto;
+  margin: 100px auto;
+  border: 1px solid red;
+}
+
+.toggle {
+  vertical-align: middle;
+}
+
+.power-on {
+  position: absolute;
+  /* border: 1px solid black; */
+  width: 10px;
+  height: 10px;
+  top: -0.5em;
+  padding: 1em;
+  /* margin-top: 10%; */
+}
+
+button.start {
+  position: relative;
+  margin: 0.3rem 1em;
+}
+
 h1 {
   text-align: center;
 }
