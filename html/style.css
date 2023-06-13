@@ -156,14 +156,15 @@ body {
 .turn {
   position: relative;
   border: 1px solid black;
-  width: 3em;
+  width: 2.8em;
   height: 2em;
+  border-radius: 10px;
   background-color: #330000;
   margin: 0.2em auto;
   font-family: "Courier New", Courier, monospace;
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: red;
   text-align: center;
   vertical-align: middle;
-  line-height: 40px;
+  line-height: 2.5em;
 }
