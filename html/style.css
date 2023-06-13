@@ -110,6 +110,9 @@
 #on {
   position: relative;
   /* border: 1px solid black; */
+  color: red;
+  font-family: courier;
+  text-align: center;
   width: 12px;
   height: 12px;
   padding: 1em;
@@ -157,4 +160,10 @@ body {
   height: 2em;
   background-color: #330000;
   margin: 0.2em auto;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2em;
+  color: red;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
 }
