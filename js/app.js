@@ -10,7 +10,7 @@ const text = document.querySelector(".text");
 
 const buttonsColors = ["red", "green", "yellow", "lightblue"];
 const playerClickedPattern = [];
-const gamePattern = [];
+let computersSelection = [];
 // conditions declaration
 let on = false;
 let isStrict = false;
@@ -52,21 +52,10 @@ const play = () => {
   for (let i = 0; i < 10; i++) {
     computersSelection.push(Math.floor(Math.random() * 4));
   }
+  // console.log(computersSelection);
   computerTurn = true;
   intervalId = setInterval(gameTurn, 1000);
 };
-//convert the nodelists to an array
-const btns = Array.from(document.querySelectorAll(".btn"));
-// console.log(btns);
-
-const computerPlay = () => {
-  let randomNumber = Math.floor(Math.random() * 4);
-  let randomChosenColor = buttonsColors[randomNumber];
-  gamePattern.push(randomChosenColor);
-  return gamePattern;
-};
-
-console.log(gamePattern);
 
 // btns.forEach((btn) => {
 //   btn.addEventListener("click", (event) => {
