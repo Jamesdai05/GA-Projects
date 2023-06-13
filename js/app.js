@@ -132,7 +132,58 @@ function flashColor() {
   blue.style.backgroundColor = "#66ccff";
 }
 
-// btns.forEach((btn) => {
+green.addEventListener("click", () => {
+  if (on) {
+    playerClickedPattern.push(1);
+    check();
+    one();
+    if (!win) {
+      setTimeout(() => {
+        clearColor();
+      }, 400);
+    }
+  }
+});
+
+red.addEventListener("click", () => {
+  if (on) {
+    playerClickedPattern.push(2);
+    check();
+    one();
+    if (!win) {
+      setTimeout(() => {
+        clearColor();
+      }, 400);
+    }
+  }
+});
+
+yellow.addEventListener("click", ()=>{
+  if (on) {
+    playerClickedPattern.push(3);
+    check();
+    one();
+    if (!win) {
+      setTimeout(() => {
+        clearColor();
+      }, 400);
+    }
+  }
+});
+
+blue.addEventListener("click", ()=>{
+  if (on) {
+    playerClickedPattern.push(4);
+    check();
+    one();
+    if (!win) {
+      setTimeout(() => {
+        clearColor();
+      }, 400);
+    }
+  }
+});
+btns.forEach((btn) => {
 //   btn.addEventListener("click", (event) => {
 //     const playerChoosenColor = event.currentTarget.getAttribute("id");
 //     playerClickedPattern.push(playerChoosenColor);
