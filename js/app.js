@@ -11,10 +11,21 @@ const buttonsColors = ["red", "green", "yellow", "lightblue"];
 const playerClickedPattern = [];
 const gamePattern = [];
 
-const btns = document.querySelectorAll(".btn");
-console.log(btns);
+const btns = Array.from(document.querySelectorAll(".btn"));
+// console.log(btns);
 
-btns.forEach((btn) => console.log(btn.id));
+btns.forEach((btn) => {
+  btn.addEventListener("click", (event) => {
+    const playerChoosenColor = event.currentTarget.getAttribute("id");
+    playerClickedPattern.push(playerChoosenColor);
+    console.log(playerClickedPattern);
+  });
+});
+
+//power on the machine
+// switchOn.addEventListener("click", () => {
+//   console.log("Button is clicked.");
+// });
 
 // btns.forEach((btn) => {
 //   btn.addEventListener("click", (event) => {
