@@ -135,7 +135,7 @@ function flashColor() {
 green.addEventListener("click", () => {
   if (on) {
     playerClickedPattern.push(1);
-    check();
+    check(); // for checking the results of user selections.
     one();
     if (!win) {
       setTimeout(() => {
@@ -148,8 +148,8 @@ green.addEventListener("click", () => {
 red.addEventListener("click", () => {
   if (on) {
     playerClickedPattern.push(2);
-    check();
-    one();
+    //check();
+    two();
     if (!win) {
       setTimeout(() => {
         clearColor();
@@ -158,11 +158,11 @@ red.addEventListener("click", () => {
   }
 });
 
-yellow.addEventListener("click", ()=>{
+yellow.addEventListener("click", () => {
   if (on) {
     playerClickedPattern.push(3);
-    check();
-    one();
+    // check();
+    three();
     if (!win) {
       setTimeout(() => {
         clearColor();
@@ -171,11 +171,11 @@ yellow.addEventListener("click", ()=>{
   }
 });
 
-blue.addEventListener("click", ()=>{
+blue.addEventListener("click", () => {
   if (on) {
     playerClickedPattern.push(4);
-    check();
-    one();
+    //check(); // for checking the results of user selections.
+    four();
     if (!win) {
       setTimeout(() => {
         clearColor();
@@ -183,7 +183,8 @@ blue.addEventListener("click", ()=>{
     }
   }
 });
-btns.forEach((btn) => {
+
+// btns.forEach((btn) => {
 //   btn.addEventListener("click", (event) => {
 //     const playerChoosenColor = event.currentTarget.getAttribute("id");
 //     playerClickedPattern.push(playerChoosenColor);
