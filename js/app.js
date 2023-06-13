@@ -45,7 +45,7 @@ const play = () => {
   win = false;
   computersSelection = [];
   flash = 0;
-  invtervalId = 0;
+  intervalId = 0;
   turn = 1;
   turnCounter.innerHTML = 1;
   noNg = true;
