@@ -125,12 +125,12 @@ function clearColor() {
   blue.style.backgroundColor = "blue";
 }
 
-// function flashColor() {
-//   green.style.backgroundColor = "99ff66";
-//   red.style.backgroundColor = "#cc0000";
-//   yellow.style.backgroundColor = "#ff9900";
-//   blue.style.backgroundColor = "#66ccff";
-// }
+function flashColor() {
+  green.style.backgroundColor = "99ff66";
+  red.style.backgroundColor = "#cc0000";
+  yellow.style.backgroundColor = "#ff9900";
+  blue.style.backgroundColor = "#66ccff";
+}
 
 // btns.forEach((btn) => {
 //   btn.addEventListener("click", (event) => {
