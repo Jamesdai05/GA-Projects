@@ -97,7 +97,7 @@
   height: 30px;
   padding: 10px auto;
   margin: 6.2em auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* vertical-align: middle; */
   color: aliceblue;
   font-weight: 900;
@@ -149,8 +149,8 @@ body {
 .text {
   position: relative;
   text-align: center;
-  top: -4em;
-  border: 1px solid red;
+  top: -4.3em;
+  /* border: 1px solid red; */
 }
 
 .turn {
