@@ -58,6 +58,8 @@ const play = () => {
 };
 
 function gameTurn() {
+  on = false; // not allow the user to click the color divs when it's off
+
   if (flash === turn) {
     clearInterval(intervalId);
     computerTurn = false;
@@ -83,7 +85,7 @@ function one() {
     audio.play();
   }
   isSound = true;
-  green.style.backgroundColor = "#00ff00";
+  green.style.backgroundColor = "99ff66";
 }
 
 function two() {
@@ -93,7 +95,7 @@ function two() {
     audio.play();
   }
   isSound = true;
-  green.style.backgroundColor = "#cc0000";
+  red.style.backgroundColor = "#cc0000";
 }
 
 function three() {
@@ -103,7 +105,7 @@ function three() {
     audio.play();
   }
   isSound = true;
-  green.style.backgroundColor = "#ff9900";
+  yellow.style.backgroundColor = "#ff9900";
 }
 
 function four() {
@@ -113,7 +115,7 @@ function four() {
     audio.play();
   }
   isSound = true;
-  green.style.backgroundColor = "#66ccff";
+  blue.style.backgroundColor = "#66ccff";
 }
 
 function clearColor() {
@@ -124,7 +126,7 @@ function clearColor() {
 }
 
 // function flashColor() {
-//   green.style.backgroundColor = "#00ff00";
+//   green.style.backgroundColor = "99ff66";
 //   red.style.backgroundColor = "#cc0000";
 //   yellow.style.backgroundColor = "#ff9900";
 //   blue.style.backgroundColor = "#66ccff";
