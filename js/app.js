@@ -11,6 +11,7 @@ const buttonsColors = ["red", "green", "yellow", "lightblue"];
 const playerClickedPattern = [];
 const gamePattern = [];
 
+//convert the nodelists to an array
 const btns = Array.from(document.querySelectorAll(".btn"));
 // console.log(btns);
 
