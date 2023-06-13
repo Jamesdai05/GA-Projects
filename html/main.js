@@ -6,3 +6,5 @@ console.log(para);
 } */
 
 para.forEach((ele) => console.log(ele));
+
+// this is just a testing file for the nodelist.
