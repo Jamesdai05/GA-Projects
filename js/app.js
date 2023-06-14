@@ -10,7 +10,7 @@ const text = document.querySelector(".text");
 
 const buttonsColors = ["red", "green", "yellow", "lightblue"];
 const playerClickedPattern = [];
-const computersSelection = [];
+let computersSelection = [];
 // conditions declaration
 let on = false;
 let isStrict = false;
@@ -136,7 +136,7 @@ function flashColor() {
 green.addEventListener("click", () => {
   if (on) {
     playerClickedPattern.push(1);
-    //check(); // for checking the results of user selections.
+    check(); // for checking the results of user selections.
     one();
     if (!win) {
       setTimeout(() => {
@@ -149,7 +149,7 @@ green.addEventListener("click", () => {
 red.addEventListener("click", () => {
   if (on) {
     playerClickedPattern.push(2);
-    //check();
+    check();
     two();
     if (!win) {
       setTimeout(() => {
@@ -162,7 +162,7 @@ red.addEventListener("click", () => {
 yellow.addEventListener("click", () => {
   if (on) {
     playerClickedPattern.push(3);
-    // check();
+    check();
     three();
     if (!win) {
       setTimeout(() => {
@@ -175,7 +175,7 @@ yellow.addEventListener("click", () => {
 blue.addEventListener("click", () => {
   if (on) {
     playerClickedPattern.push(4);
-    //check(); // for checking the results of user selections.
+    check(); // for checking the results of user selections.
     four();
     if (!win) {
       setTimeout(() => {
@@ -199,15 +199,15 @@ function check() {
   if (
     playerClickedPattern[playerClickedPattern.length - 1] !==
     computersSelection[playerClickedPattern.length - 1]
-  ) {
+  )
     noNg = false;
-  }
+
   if (playerClickedPattern.length === 20 && noNg) {
-    winGame();
+    winGame(); // win the game
   }
   if (noNg === false) {
     flashColor();
-    turnCounter.textContent = "Wrong!";
+    turnCounter.innerHTML = "NG!";
     clearColor();
     setTimeout(() => {
       turnCounter.textContent = turn;
