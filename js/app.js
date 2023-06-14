@@ -9,7 +9,7 @@ const turnCounter = document.querySelector(".turn");
 const text = document.querySelector(".text");
 
 const buttonsColors = ["red", "green", "yellow", "lightblue"];
-const playerClickedPattern = [];
+let playerClickedPattern = [];
 let computersSelection = [];
 // conditions declaration
 let on = false;
@@ -50,7 +50,7 @@ const play = () => {
   turn = 1;
   turnCounter.innerHTML = 1;
   noNg = true;
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 3; i++) {
     computersSelection.push(Math.floor(Math.random() * 4) + 1);
   }
   // console.log(computersSelection);
@@ -86,7 +86,7 @@ function one() {
     audio.play();
   }
   isSound = true;
-  green.style.backgroundColor = "99ff66";
+  green.style.backgroundColor = "#89BA58";
 }
 
 function two() {
@@ -127,7 +127,7 @@ function clearColor() {
 }
 
 function flashColor() {
-  green.style.backgroundColor = "99ff66";
+  green.style.backgroundColor = "#89BA58";
   red.style.backgroundColor = "#cc0000";
   yellow.style.backgroundColor = "#ff9900";
   blue.style.backgroundColor = "#66ccff";
@@ -202,17 +202,15 @@ function check() {
   )
     noNg = false;
 
-  if (playerClickedPattern.length === 20 && noNg) {
-    winGame(); // win the game
+  if (playerClickedPattern.length === 3 && noNg) {
+    winGame(); // win the game , run the wingame func
   }
   if (noNg === false) {
     flashColor();
     turnCounter.innerHTML = "NG!";
-    clearColor();
     setTimeout(() => {
       turnCounter.textContent = turn;
       clearColor();
-
       // under strict mode, if wrong turn counter will reset;
       if (isStrict) {
         play();
@@ -236,6 +234,13 @@ function check() {
     intervalId = setInterval(gameTurn, 800);
   }
 }
+
+const winGame = () => {
+  flashColor();
+  turnCounter.innerHTML = "Win";
+  on = false;
+  win = true;
+};
 
 // btns.forEach((btn) => {
 //   btn.addEventListener("click", (event) => {
