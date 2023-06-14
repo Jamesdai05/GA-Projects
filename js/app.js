@@ -10,7 +10,7 @@ const text = document.querySelector(".text");
 
 const buttonsColors = ["red", "green", "yellow", "lightblue"];
 const playerClickedPattern = [];
-let computersSelection = [];
+const computersSelection = [];
 // conditions declaration
 let on = false;
 let isStrict = false;
@@ -20,6 +20,7 @@ let win;
 let noNg;
 let computerTurn;
 let intervalId;
+let turn;
 
 // add the event to switch on button
 onButton.addEventListener("change", (event) => {
@@ -135,7 +136,7 @@ function flashColor() {
 green.addEventListener("click", () => {
   if (on) {
     playerClickedPattern.push(1);
-    check(); // for checking the results of user selections.
+    //check(); // for checking the results of user selections.
     one();
     if (!win) {
       setTimeout(() => {
@@ -183,6 +184,58 @@ blue.addEventListener("click", () => {
     }
   }
 });
+
+// state the strict mode condition;
+strictButton.addEventListener("change", () => {
+  if (strictButton.checked === true) {
+    isStrict = true;
+  } else {
+    isStrict = false;
+  }
+});
+
+function check() {
+  // the game will stop at the wrong clicking
+  if (
+    playerClickedPattern[playerClickedPattern.length - 1] !==
+    computersSelection[playerClickedPattern.length - 1]
+  ) {
+    noNg = false;
+  }
+  if (playerClickedPattern.length === 20 && noNg) {
+    winGame();
+  }
+  if (noNg === false) {
+    flashColor();
+    turnCounter.textContent = "Wrong!";
+    clearColor();
+    setTimeout(() => {
+      turnCounter.textContent = turn;
+      clearColor();
+
+      // under strict mode, if wrong turn counter will reset;
+      if (isStrict) {
+        play();
+      } else {
+        computerTurn = true;
+        flash = 0;
+        playerClickedPattern = [];
+        noNg = true;
+        intervalId = setInterval(gameTurn, 800);
+      }
+    }, 800);
+    isSound = false;
+  }
+  // set the intialization state for the next level game
+  if (turn == playerClickedPattern.length && noNg && !win) {
+    turn++;
+    playerClickedPattern = [];
+    computerTurn = true;
+    flash = 0;
+    turnCounter.innerHTML = turn;
+    intervalId = setInterval(gameTurn, 800);
+  }
+}
 
 // btns.forEach((btn) => {
 //   btn.addEventListener("click", (event) => {
