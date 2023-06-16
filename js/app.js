@@ -45,6 +45,7 @@ startButton.addEventListener("click", (event) => {
 const play = () => {
   win = false;
   computersSelection = [];
+  playerClickedPattern = [];
   flash = 0;
   intervalId = 0;
   turn = 1;
@@ -119,18 +120,18 @@ function four() {
   blue.style.backgroundColor = "#66ccff";
 }
 
-function clearColor() {
-  green.style.backgroundColor = "green";
-  red.style.backgroundColor = "red";
-  yellow.style.backgroundColor = "yellow";
-  blue.style.backgroundColor = "blue";
-}
-
 function flashColor() {
   green.style.backgroundColor = "#89BA58";
   red.style.backgroundColor = "#cc0000";
   yellow.style.backgroundColor = "#ff9900";
   blue.style.backgroundColor = "#66ccff";
+}
+
+function clearColor() {
+  green.style.backgroundColor = "green";
+  red.style.backgroundColor = "red";
+  yellow.style.backgroundColor = "yellow";
+  blue.style.backgroundColor = "blue";
 }
 
 green.addEventListener("click", () => {
@@ -186,7 +187,7 @@ blue.addEventListener("click", () => {
 });
 
 // state the strict mode condition;
-strictButton.addEventListener("change", () => {
+strictButton.addEventListener("click", () => {
   if (strictButton.checked === true) {
     isStrict = true;
   } else {
