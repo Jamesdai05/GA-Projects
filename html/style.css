@@ -186,3 +186,13 @@ body {
   font-size: 105%;
   padding: 0.5em;
 }
+
+div.restart {
+  margin: 1em 48%;
+}
+
+button#restart {
+  background-color: rgb(22, 214, 108);
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
