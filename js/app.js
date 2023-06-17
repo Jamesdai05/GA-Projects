@@ -8,6 +8,8 @@ const strictButton = document.querySelector("#strict");
 const turnCounter = document.querySelector(".turn");
 const text = document.querySelector(".text");
 
+// console.log(onButton);
+
 const buttonsColors = ["red", "green", "yellow", "lightblue"];
 let playerClickedPattern = [];
 let computersSelection = [];
@@ -23,7 +25,7 @@ let intervalId;
 let turn;
 
 // add the event to switch on button
-onButton.addEventListener("change", (event) => {
+onButton.addEventListener("click", (event) => {
   if (onButton.checked === true) {
     on = true;
     turnCounter.innerHTML = "-";
@@ -51,7 +53,7 @@ const play = () => {
   turn = 1;
   turnCounter.innerHTML = 1;
   noNg = true;
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i <= 20; i++) {
     computersSelection.push(Math.floor(Math.random() * 4) + 1);
   }
   // console.log(computersSelection);
@@ -203,7 +205,7 @@ function check() {
   )
     noNg = false;
 
-  if (playerClickedPattern.length === 3 && noNg) {
+  if (playerClickedPattern.length === 20 && noNg) {
     winGame(); // win the game , run the wingame func
   }
   if (noNg === false) {
