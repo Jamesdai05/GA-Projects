@@ -25,7 +25,7 @@ let intervalId;
 let turn;
 
 // add the event to switch on button
-onButton.addEventListener("click", (event) => {
+onButton.addEventListener("click", () => {
   if (onButton.checked === true) {
     on = true;
     turnCounter.innerHTML = "-";
@@ -245,6 +245,22 @@ const winGame = () => {
   win = true;
 };
 
+//added the restart buttons for the game to restart.
+
+/* const restartButton = document.querySelector("#restart");
+restartButton.addEventListener("click", (event) => {
+  if (onButton.checked === true) {
+    on = true;
+    turnCounter.innerHTML = "-";
+  } else {
+    on = false;
+    turnCounter.innerHTML = "";
+    clearColor();
+    clearInterval(intervalId);
+  }
+}); */
+
+// console.log(restartButton);
 // btns.forEach((btn) => {
 //   btn.addEventListener("click", (event) => {
 //     const playerChoosenColor = event.currentTarget.getAttribute("id");
