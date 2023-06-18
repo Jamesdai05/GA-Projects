@@ -260,7 +260,7 @@ restartButton.addEventListener("click", (event) => {
   }
 });
 
-// console.log(restartButton);
+/* // console.log(restartButton);
 // btns.forEach((btn) => {
 //   btn.addEventListener("click", (event) => {
 //     const playerChoosenColor = event.currentTarget.getAttribute("id");
@@ -284,4 +284,4 @@ restartButton.addEventListener("click", (event) => {
 //   // playsound of the button
 // });
 
-// console.log(userChoosenColor);
+// console.log(userChoosenColor); */
