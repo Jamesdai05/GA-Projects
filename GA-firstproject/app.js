@@ -247,7 +247,7 @@ const winGame = () => {
 
 //added the restart buttons for the game to restart.
 
-/* const restartButton = document.querySelector("#restart");
+const restartButton = document.querySelector("#restart");
 restartButton.addEventListener("click", (event) => {
   if (onButton.checked === true) {
     on = true;
@@ -258,7 +258,7 @@ restartButton.addEventListener("click", (event) => {
     clearColor();
     clearInterval(intervalId);
   }
-}); */
+});
 
 // console.log(restartButton);
 // btns.forEach((btn) => {
