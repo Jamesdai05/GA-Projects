@@ -19,7 +19,8 @@
 <hr>
 
 </p>The challenge is to figure out the game logic and realise them into the actual product on the webpage.</p>
-<p>**Method to tackle**: break the problem into a few small problems and solve them with the simple solution as a beginning.</p>
+
+**Method to tackle** : Break the problem into a few small problems and solve them with the simple solution as a beginning.
 
 ## The Approach
 
@@ -69,6 +70,8 @@ The game is just a web-game and no installation is required</p>
 </hr>
 
 ## Items to be improved
+
+**bold text**
 
 </br>
 </br>
