@@ -55,7 +55,7 @@
 ## GameLink
 
 </hr>
-++  The gamelink:
+&nbsp &nbsp &nbsp The gamelink:()
 
 ## Installation instructions
 
