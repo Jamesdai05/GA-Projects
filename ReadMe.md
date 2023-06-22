@@ -31,7 +31,7 @@
 &nbsp &nbsp &nbsp Understand the knowledge required to complete this game.
 </br>
 </br>
-&nbsp &nbsp &nbsp Apply functions to the realised the rules.
+&nbsp &nbsp &nbsp Apply functions to realise the rules.
 </br>
 </br>
 
@@ -66,7 +66,10 @@ The game is just a web-game and no installation is required</p>
 
 ## Unsolved Problems
 
+</hr>
+&nbsp &nbsp &nbsp How to Insert the background sound for the game while the player is play on the game and background music will stop while it's user's turn.
 </br>
+
 </hr>
 
 ## Items to be improved
