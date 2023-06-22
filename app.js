@@ -33,7 +33,7 @@ onButton.addEventListener("click", () => {
     on = false;
     turnCounter.innerHTML = "";
     clearColor();
-    clearInterval(intervalId);
+    clearInterval(intervalId); //to stop the time
   }
 });
 
