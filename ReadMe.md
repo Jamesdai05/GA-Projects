@@ -2,7 +2,7 @@
 
 ## Technology
 
-<hr>
+</hr>
 
 > ### HTML
 >
@@ -16,7 +16,7 @@
 
 ## Challenge
 
-<hr>
+</hr>
 
 </p>The challenge is to figure out the game logic and realise them into the actual product on the webpage.</p>
 
@@ -55,7 +55,7 @@
 ## GameLink
 
 </hr>
-&nbsp &nbsp &nbsp The gamelink:()
+&nbsp &nbsp &nbsp The gamelink:https://jamesdai05.github.io/GA-Projects/
 
 ## Installation instructions
 
