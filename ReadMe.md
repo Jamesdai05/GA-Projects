@@ -22,14 +22,14 @@
 
 </hr>
 
-</p>The challenge is to figure out the game logic and realise them into the actual product on the webpage.</p>
+</p>The challenge is to figure out the game logic and implemeted them by codes.</p>
 
 **Method to tackle** : Break the problem into a few small problems and solve them with the simple solution as a beginning.
 
 ## The Approach
 
 </hr>
-&nbsp &nbsp &nbsp Understand the product (eg. initiate game state, computer's turn, palyers turn state and check the results,and strict mode condition checking).
+&nbsp &nbsp &nbsp Understand the product (eg. initiate game state, computer's turn, palyer's turn state and check the result,and strict mode condition checking,wining game codition checking.).
 </br>
 </br>
 &nbsp &nbsp &nbsp Understand the knowledge/tech to complete this game.
@@ -54,7 +54,7 @@
 5. Activate strict mode game by clicking the strict mode.
    </br>
 6. On the strict mode, the game will be reset to the first round if the player did not get it right.</br>
-7. In order to win the game, player need to pass 20 rounds of the challenge.
+7. In order to win the game, player needs to pass 20 rounds of the challenge.
 
 ## GameLink
 
