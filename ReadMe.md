@@ -49,7 +49,7 @@
    </br>
 5. Activate strict mode game by clicking the strict mode.
    </br>
-6. n the strict mode, the game will be reset to the first round if the player did not get it right.</br>
+6. On the strict mode, the game will be reset to the first round if the player did not get it right.</br>
 7. In order to win the game, player need to pass 20 rounds of the challenge.
 
 ## GameLink
@@ -67,14 +67,17 @@ The game is just a web-game and no installation is required</p>
 ## Unsolved Problems
 
 </hr>
-&nbsp &nbsp &nbsp How to Insert the background sound for the game while the player is play on the game and background music will stop while it's user's turn.
+&nbsp &nbsp &nbsp How to make the button more realistic with background-color;
+
 </br>
 
 </hr>
 
 ## Items to be improved
 
-**bold text**
+</hr>
+1. To insert the background music for the game while the player is playing and background music will stop while if the buttons are actived.</br>
+2. To make the button on the innterface to be more realistic.
 
 </br>
 </br>
