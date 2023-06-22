@@ -1,5 +1,9 @@
 # SIMON GAME
 
+</p>Project Introduction: Create a simon game meant for 1 player with 2 modes:normal mode and strict mode.</p>
+
+![Simon Game](./asset/Screenshot%20simongame.png);
+
 ## Technology
 
 </hr>
@@ -25,10 +29,10 @@
 ## The Approach
 
 </hr>
-&nbsp &nbsp &nbsp Understand the product (eg. game rules and its basic logic).
+&nbsp &nbsp &nbsp Understand the product (eg. initiate game state, computer's turn, palyers turn state and check the results,and strict mode condition checking).
 </br>
 </br>
-&nbsp &nbsp &nbsp Understand the knowledge required to complete this game.
+&nbsp &nbsp &nbsp Understand the knowledge/tech to complete this game.
 </br>
 </br>
 &nbsp &nbsp &nbsp Apply functions to realise the rules.
@@ -67,7 +71,7 @@ The game is just a web-game and no installation is required</p>
 ## Unsolved Problems
 
 </hr>
-&nbsp &nbsp &nbsp How to make the button more realistic with background-color;
+How to make the button more realistic with background-color;
 
 </br>
 
